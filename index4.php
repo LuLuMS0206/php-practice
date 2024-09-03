@@ -27,6 +27,6 @@ if (isset($_GET['id'])) {
         echo "No se encontró ninguna habitación con el ID especificado.";
     }
 } else {
-    echo "ntroduce un ID de habitación en la URL.";
+    echo "introduce un ID de habitación en la URL";
 }
 ?>
