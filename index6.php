@@ -9,7 +9,7 @@ if (mysqli_connect_errno()) {
 if (isset($_GET['id'])) {
     $room_id = intval($_GET['id']); 
 
-    $sql = "SELECT * FROM rooms WHERE id = $room_id";
+    $sql = "SELECT * FROM rooms WHERE rooms._id = $room_id";
     $result = mysqli_query($mysqli, $sql);
 
  
