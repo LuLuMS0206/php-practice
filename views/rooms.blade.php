@@ -3,10 +3,10 @@
 
 @foreach ($rooms as $room)
     <ul>
-        <li>Name: {{ htmlspecialchars($room['roomType']) }}</li>
-        <li>Number: {{ htmlspecialchars($room['roomNumber']) }}</li>
-        <li>Price: {{ htmlspecialchars($room['price']) }}$</li>
-        <li>Discount: {{ htmlspecialchars($room['discount']) }}%</li>
-        <li>Price Discount: {{ htmlspecialchars($room['price'] - ($room['price'] * ($room['discount'] / 100))) }}$</li>
+        <li>Name: {{ htmlspecialchars($room['Name']) }}</li>
+        <li>Number: {{ htmlspecialchars($room['Number']) }}</li>
+        <li>Price: {{ htmlspecialchars($room['Price']) }}$</li>
+        <li>Discount: {{ htmlspecialchars($room['Discount']) }}%</li>
+        <li>Price Discount: {{ htmlspecialchars($room['Price'] - ($room['Price'] * ($room['Discount'] / 100))) }}$</li>
     </ul>
 @endforeach
